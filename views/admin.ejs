@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Admin</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <script src="jquery/dist/jquery.min.js"></script>
+        <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+        <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+        <link href="weather-icons/css/weather-icons.min.css" rel="stylesheet">
+        <link href="mdi/css/materialdesignicons.min.css" rel="stylesheet">
+        <link href="admin.css" rel="stylesheet">
+        <script src="admin.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="indicator" id="lat"></div>
+                    <div class="indicator" id="lng"></div>
+                    <div class="indicator" id="speed"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3">
+                    <button data-type="sun" class="btn btn-primary"><i class="mdi mdi-weather-sunny"></i></button>
+                </div>
+                <div class="col-xs-3">
+                    <button data-type="cloud" class="btn btn-primary"><i class="mdi mdi-cloud"></i></button>
+                </div>
+                <div class="col-xs-3">
+                    <button data-type="rain" class="btn btn-primary"><i class="mdi mdi-weather-rainy"></i></button>
+                </div>
+                <div class="col-xs-3">
+                    <button data-type="snow" class="btn btn-primary"><i class="mdi mdi-weather-snowy"></i></button>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <button data-type="checkin" class="btn btn-success"><i class="mdi mdi-map-marker"></i></button>
+                </div>
+                <div class="col-xs-6">
+                    <button data-type="rest" class="btn btn-info"><i class="mdi mdi-hotel"></i></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3">
+                    <button data-type="food" class="btn btn-primary"><i class="mdi mdi-food"></i></button>
+                </div>
+                <div class="col-xs-3">
+                    <button data-type="traffic" class="btn btn-warning"><i class="mdi mdi-car"></i></button>
+                </div>
+                <div class="col-xs-3">
+                    <button data-type="fuel" class="btn btn-warning"><i class="mdi mdi-gas-station"></i></button>
+                </div>
+                <div class="col-xs-3">
+                    <button data-type="alert" class="btn btn-danger"><i class="mdi mdi-alert"></i></button>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

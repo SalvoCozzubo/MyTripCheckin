@@ -1,0 +1,28 @@
+{
+  "name": "mytripcheckin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "Car",
+    "Marker",
+    "Checkin",
+    "Map"
+  ],
+  "author": "Salvatore Cozzubo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "ejs": "^2.5.3",
+    "express": "^4.14.0",
+    "html": "^1.0.0",
+    "jquery": "^2.2.4",
+    "mdi": "^1.7.22",
+    "mongoose": "^4.7.1",
+    "socket.io": "^1.7.2"
+  }
+}

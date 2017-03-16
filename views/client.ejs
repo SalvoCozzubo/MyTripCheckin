@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Client</title>
+        <script src="jquery/dist/jquery.min.js"></script>
+        <script src="socket.io/socket.io.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBV2jOBZ1lJNiBl7FdGj7yuxoJV6VWIb24&callback=initMap"></script>
+        <script>
+            var host = '<%= process.env.OPENSHIFT_APP_DNS || 'localhost' %>';
+            var port = 8443;
+            if(host == 'localhost') {
+                port = 3000;
+            }
+            function initMap() {
+                var map = new google.maps.Map(
+                    document.getElementById('map'), { zoom: 4, center: { lat: 37, lng: 36 } }
+                );
+
+                getMarkers(map);
+            }
+        </script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div id="map" style="width: 100%; height: 100%;"></div>
+    </body>
+</html
